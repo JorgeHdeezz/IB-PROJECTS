@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "${workspaceRoot}/a.exe",
+      "cwd": "c:/Users/PC/GOOGLE DRIVE ULL/INGENIERÍA INFORMÁTICA/Año 2024-2025/1º CUATRIMESTRE/INFORMÁTICA BÁSICA/IB-PROJECTS/PROBLEMAS/FUNCIONES/HOJA DE PROBLEMAS",
+      "program": "c:/Users/PC/GOOGLE DRIVE ULL/INGENIERÍA INFORMÁTICA/Año 2024-2025/1º CUATRIMESTRE/INFORMÁTICA BÁSICA/IB-PROJECTS/PROBLEMAS/FUNCIONES/HOJA DE PROBLEMAS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
