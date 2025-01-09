@@ -1,70 +1,81 @@
-// Este programa no usa fstream
-
 #include <iostream>
 #include <vector>
-#include <string>
+#include <utility>
 
 class Graph {
-private: 
-    int numVertices; 
-    std::vector<std::vector<int>> adjMatrix;
-    bool isDirected;
+private:
+    int numVertices_; // Número de vértices
+    int numEdges_;    // Número de aristas
+    std::vector<std::pair<int, int>> edges_; // Lista de aristas
 
-public: 
-    Graph(int numVertices, bool isDirected) : numVertices(numVertices), isDirected(isDirected) {
-        adjMatrix.resize(numVertices, std::vector<int>(numVertices, 0));
-    }
+public:
+    // Constructor predeterminado
+    Graph() : numVertices_(0), numEdges_(0) {}
 
-    void AddEdge(int u, int v) {
-        adjMatrix[u][v] = 1;
-        if (!isDirected) {
-            adjMatrix[v][u] = 1;
-            }
-    }
+    // Constructor parametrizado
+    Graph(int vertices, int numEdges, std::vector<std::pair<int, int>> edges)
+        : numVertices_(vertices), numEdges_(numEdges), edges_(edges) {}
 
-    void Display() const {
-        for (int i = 0; i < numVertices; ++i) {
-            for (int j = 0; j < numVertices; ++j) {
-                std::cout << adjMatrix[i][j] << " ";
-            }
-            std::cout << std::endl;
+    // Métodos para obtener información
+    int numVertices() const { return numVertices_; }
+    int numEdges() const { return numEdges_; }
+    std::vector<std::pair<int, int>> edges() const { return edges_; }
+
+    // Mostrar el grafo
+    void mostrar() const {
+        std::cout << "Número de vértices: " << numVertices_ 
+                  << ", Número de aristas: " << numEdges_ << std::endl;
+        std::cout << "Aristas:" << std::endl;
+        for (const auto& edge : edges_) {
+            std::cout << edge.first << " -> " << edge.second << std::endl;
         }
     }
 
-    std::string GetType() const {
-        return isDirected ? "Dirigido" : "No dirigido";
+    // Leer el grafo desde el usuario
+    void leerGrafo(int numVertices, int numEdges) {
+        numVertices_ = numVertices;
+        numEdges_ = numEdges;
+
+        if (numVertices_ <= 0 || numEdges_ < 0) {
+            std::cerr << "Número de vértices o aristas inválido." << std::endl;
+            return;
+        }
+
+        edges_.clear(); // Limpiar las aristas existentes
+        std::cout << "Introduce las aristas como pares de vértices (u v):" << std::endl;
+
+        for (int i = 0; i < numEdges_; ++i) {
+            int u, v;
+            std::cin >> u >> v;
+
+            // Validar los vértices
+            if (u < 0 || u >= numVertices_ || v < 0 || v >= numVertices_) {
+                std::cerr << "Vértices inválidos: " << u << " -> " << v << std::endl;
+                return;
+            }
+
+            edges_.emplace_back(u, v); // Agregar la arista
+        }
     }
 };
 
 int main() {
-    int numVertices; 
-    bool isDirected; 
+    int numVertices, numEdges;
 
-    std::cout << "Introduce el numero de vertices: "; 
+    // Leer el número de vértices y aristas
+    std::cout << "Introduce el número de vértices: ";
     std::cin >> numVertices;
-    std::cout << "El grafo es dirigido (1) o no dirigido (0): ";
-    std::cin >> isDirected;
+    std::cout << "Introduce el número de aristas: ";
+    std::cin >> numEdges;
 
-    Graph graph(numVertices, isDirected);
+    // Crear un objeto de la clase Graph
+    Graph graph;
 
-    int u, v; 
-    char choice; 
+    // Leer las aristas desde el usuario
+    graph.leerGrafo(numVertices, numEdges);
 
-    do {
-        std::cout << "Introduce el vertice u: ";
-        std::cin >> u;
-        std::cout << "Introduce el vertice v: ";
-        std::cin >> v;
-        graph.AddEdge(u, v);
+    // Mostrar el grafo
+    graph.mostrar();
 
-        std::cout << "Desea agregar otra arista? (s/n): ";
-        std::cin >> choice;
-    } while (choice == 's' || choice == 'S');
-
-    std::cout << "Matriz de adyacencia del grafo " << graph.GetType() << std::endl;
-    graph.Display();
-
-    std::cout << "El grafo es: " << graph.GetType() << std::endl;
-
-    return 0; 
-}  
+    return 0;
+}
