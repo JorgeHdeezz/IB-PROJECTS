@@ -30,7 +30,7 @@ public:
             std::cout << edge.first << " -> " << edge.second << std::endl;
         }
     }
-
+    
     // Leer el grafo desde el usuario
     void leerGrafo(int numVertices, int numEdges) {
         numVertices_ = numVertices;
@@ -53,7 +53,6 @@ public:
                 std::cerr << "Vértices inválidos: " << u << " -> " << v << std::endl;
                 return;
             }
-
             edges_.emplace_back(u, v); // Agregar la arista
         }
     }
