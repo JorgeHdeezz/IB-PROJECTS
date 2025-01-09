@@ -1,0 +1,11 @@
+---
+problem_id: P78142_en
+submission_id: S005
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-31 10:38:40"
+time_out: "2023-10-31 10:38:44"
+veredict: AC
+veredict_info: ~
+title: Average
+...

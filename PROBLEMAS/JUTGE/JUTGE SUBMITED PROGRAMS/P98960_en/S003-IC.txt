@@ -1,0 +1,11 @@
+---
+problem_id: P98960_en
+submission_id: S003
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-17 10:25:00"
+time_out: "2023-10-17 10:25:07"
+veredict: IC
+veredict_info: ~
+title: Uppercase and lowercase letters
+...

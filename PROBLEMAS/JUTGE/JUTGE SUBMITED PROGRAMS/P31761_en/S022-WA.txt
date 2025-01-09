@@ -1,0 +1,11 @@
+---
+problem_id: P31761_en
+submission_id: S022
+compiler_id: Clang++17
+annotation: ~
+time_in: "2024-11-05 16:54:26"
+time_out: "2024-11-05 16:54:33"
+veredict: WA
+veredict_info: ~
+title: Multiply
+...

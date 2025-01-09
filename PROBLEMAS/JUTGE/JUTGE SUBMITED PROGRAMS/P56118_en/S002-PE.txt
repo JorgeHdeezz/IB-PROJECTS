@@ -1,0 +1,11 @@
+---
+problem_id: P56118_en
+submission_id: S002
+compiler_id: Clang++17
+annotation: ~
+time_in: "2022-10-31 17:14:14"
+time_out: "2022-10-31 17:14:22"
+veredict: PE
+veredict_info: ~
+title: Maximum of two integer numbers
+...

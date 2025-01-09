@@ -1,0 +1,11 @@
+---
+problem_id: P34279_en
+submission_id: S004
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-17 11:23:47"
+time_out: "2023-10-17 11:23:54"
+veredict: WA
+veredict_info: ~
+title: Add one second
+...

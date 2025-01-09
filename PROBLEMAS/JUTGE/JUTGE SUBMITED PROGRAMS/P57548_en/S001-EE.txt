@@ -1,0 +1,11 @@
+---
+problem_id: P57548_en
+submission_id: S001
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-04 20:28:47"
+time_out: "2023-10-04 20:28:51"
+veredict: EE
+veredict_info: floating point exception
+title: Sum of two integer numbers
+...

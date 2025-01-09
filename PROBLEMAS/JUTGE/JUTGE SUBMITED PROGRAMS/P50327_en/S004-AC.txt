@@ -1,0 +1,11 @@
+---
+problem_id: P50327_en
+submission_id: S004
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-30 22:20:22"
+time_out: "2023-10-30 22:20:26"
+veredict: AC
+veredict_info: ~
+title: Reversed number
+...

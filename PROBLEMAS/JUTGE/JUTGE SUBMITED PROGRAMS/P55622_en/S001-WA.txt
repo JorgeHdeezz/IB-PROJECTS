@@ -1,0 +1,11 @@
+---
+problem_id: P55622_en
+submission_id: S001
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-31 10:05:28"
+time_out: "2023-10-31 10:05:32"
+veredict: WA
+veredict_info: ~
+title: Number of digits (1)
+...

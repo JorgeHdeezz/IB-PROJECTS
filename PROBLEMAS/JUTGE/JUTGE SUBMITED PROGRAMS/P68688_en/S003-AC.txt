@@ -1,0 +1,11 @@
+---
+problem_id: P68688_en
+submission_id: S003
+compiler_id: Clang++17
+annotation: ~
+time_in: "2022-10-31 17:02:33"
+time_out: "2022-10-31 17:02:39"
+veredict: AC
+veredict_info: ~
+title: Hello world!
+...

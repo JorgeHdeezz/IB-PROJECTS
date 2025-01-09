@@ -1,0 +1,11 @@
+---
+problem_id: P97156_en
+submission_id: S003
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-24 17:28:10"
+time_out: "2023-10-24 17:28:14"
+veredict: PE
+veredict_info: ~
+title: Numbers in an interval
+...

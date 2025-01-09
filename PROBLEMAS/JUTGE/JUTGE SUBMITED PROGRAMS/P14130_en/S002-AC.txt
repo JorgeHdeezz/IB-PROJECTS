@@ -1,0 +1,11 @@
+---
+problem_id: P14130_en
+submission_id: S002
+compiler_id: Clang++17
+annotation: ~
+time_in: "2022-11-28 20:31:27"
+time_out: "2022-11-28 20:31:36"
+veredict: AC
+veredict_info: ~
+title: Equal to the last one
+...

@@ -1,0 +1,11 @@
+---
+problem_id: P79817_en
+submission_id: S003
+compiler_id: Clang++17
+annotation: ~
+time_in: "2025-01-09 14:47:55"
+time_out: "2025-01-09 14:48:02"
+veredict: WA
+veredict_info: ~
+title: Powers
+...

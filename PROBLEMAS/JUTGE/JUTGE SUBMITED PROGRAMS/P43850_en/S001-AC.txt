@@ -1,0 +1,11 @@
+---
+problem_id: P43850_en
+submission_id: S001
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-11-14 11:06:55"
+time_out: "2023-11-14 11:07:01"
+veredict: AC
+veredict_info: ~
+title: Uncle Ernie the Magician
+...

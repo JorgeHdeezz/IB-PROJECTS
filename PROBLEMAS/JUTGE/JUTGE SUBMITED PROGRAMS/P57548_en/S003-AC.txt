@@ -1,0 +1,11 @@
+---
+problem_id: P57548_en
+submission_id: S003
+compiler_id: Clang++17
+annotation: ~
+time_in: "2023-10-08 18:54:43"
+time_out: "2023-10-08 18:54:47"
+veredict: AC
+veredict_info: ~
+title: Sum of two integer numbers
+...

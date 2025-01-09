@@ -1,0 +1,7 @@
+---
+name: "Jorge Hern\xE1ndez de Vicente"
+email: alu0101548036@ull.edu.es
+webpage: ~
+affiliation: ULL
+country_id: ES-IsC
+...
